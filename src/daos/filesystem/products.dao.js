@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import { v4 as uuidv4 } from 'uuid';
 import path from 'path';
 
-class ProductManager {
+class ProductDaoFS {
     constructor(path) {
         this.path = path;
     }
@@ -77,7 +77,7 @@ class ProductManager {
         }
     }
 
-    async deleteAllProd() {
+    /*async deleteAllProd() {
         try {
             const products = await this.getAll();
             if (!products.length > 0) throw new Error("products is empty");
@@ -85,9 +85,9 @@ class ProductManager {
         } catch (error) {
             throw new Error(error);
         }
-    }
+    }*/
 
 }
 
 
-export const productsManager = new ProductManager(path.join(process.cwd(), 'src/data/products.json'));
+export const productsDao = new ProductDaoFS(path.join(process.cwd(), 'src/daos/filesystem/data/products.json'));

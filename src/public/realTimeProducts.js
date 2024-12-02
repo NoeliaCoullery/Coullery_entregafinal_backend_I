@@ -1,4 +1,4 @@
-const socketClient = io();
+/*const socketClient = io();
 
 const formAdd = document.getElementById('productFormAdd');
 const formDel = document.getElementById('productFormDel');
@@ -7,12 +7,11 @@ const prodPrice = document.getElementById('price');
 const prodStock = document.getElementById('stock');
 const prodCategory = document.getElementById('category');
 const prodIdToDelete = document.getElementById('productId');
-const tableBody = document.getElementById('productTableBody');
-
+const tableBody = document.getElementById('productTableBody');*/
 
 /* Añadir un producto */
 // Captura todos los value de los inputs y emite un producto al servidor
-formAdd.onsubmit = (e) => {
+/*formAdd.onsubmit = (e) => {
     e.preventDefault();
 
     const name = prodName.value;
@@ -25,8 +24,8 @@ formAdd.onsubmit = (e) => {
 };
 
 /* Eliminar un producto */
-// Captura el iD del producto a eliminar
-formDel.onsubmit = (e) => {
+// Captura el iD del producto a eliminar*/
+/*formDel.onsubmit = (e) => {
     e.preventDefault();
 
     const productId = prodIdToDelete.value;
@@ -60,5 +59,6 @@ socketClient.on('updateProducts', (products) => {
     console.log("el elemento 'productTableBody' no se encontró en el DOM");
     
 }
-});
+});*/
 
+//codigo de la entrega anterior

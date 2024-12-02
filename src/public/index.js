@@ -1,4 +1,4 @@
-const socketClient = io();
+/*const socketClient = io();
 
 const tableBody = document.getElementById('productTableBody');
 
@@ -20,5 +20,4 @@ function showProducts(products) {
 // Escuchar el evento 'updateProducts' para actualizar la tabla
 socketClient.on('updateProducts', (products) => {
     showProducts(products);
-});
-
+});*/

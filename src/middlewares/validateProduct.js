@@ -1,4 +1,4 @@
-const validateProduct = (req, res, next) => {
+/*const validateProduct = (req, res, next) => {
     const { title, description, code, price, stock, category, thumbnails } = req.body;
 
     // Verifica que todos los campos requeridos no estén vacios
@@ -23,5 +23,5 @@ const validateProduct = (req, res, next) => {
     next();
 };
 
-export default validateProduct;
+export default validateProduct;*/
 

@@ -1,4 +1,4 @@
-import { Router } from "express";
+/*import { Router } from "express";
 
 
 const viewsRouter = Router();
@@ -12,4 +12,5 @@ viewsRouter.get('/realtimeproducts', (req, res) => {
 });
 
 
-export default viewsRouter;
+export default viewsRouter;*/
+//es todo codigo de la entrega pasada

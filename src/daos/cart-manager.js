@@ -1,4 +1,4 @@
-import fs from 'fs';
+/*import fs from 'fs';
 import { v4 as uuidv4 } from 'uuid';
 import path from 'path';
 import { productsManager } from './products-manager.js';
@@ -71,4 +71,4 @@ class CartManager {
 
 }
 
-export const cartManager = new CartManager(path.join(process.cwd(), 'src/data/carts.json'));
+export const cartManager = new CartManager(path.join(process.cwd(), 'src/data/carts.json'));*/

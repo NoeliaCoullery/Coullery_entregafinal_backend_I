@@ -1,4 +1,28 @@
-import { Router } from "express";
+import { Router } from 'express';
+import * as controllers from '../controllers/cart.controllers.js';
+
+const cartRouter = Router();
+
+cartRouter.get('/:cid', controllers.getCartWithProducts);
+
+cartRouter.delete('/:cid/products/:pid', controllers.deleteProductFromCart);
+
+cartRouter.put('/:cid', controllers.updateCart);
+
+cartRouter.put('/:cid/products/:pid', controllers.updateProductQuantity);
+
+cartRouter.delete('/:cid', controllers.deleteAllProductsFromCart);
+
+cartRouter.post('/add/:cid/:pid', controllers.addProductToCart);
+
+export default cartRouter;
+
+
+
+
+
+
+/*import { Router } from "express";
 import { cartManager } from "../managers/cart-manager.js";
 
 const cartRouter = Router();
@@ -39,4 +63,5 @@ cartRouter.post('/:cid/product/:pid', async (req, res) => {
 })
 
 
-export default cartRouter;
+export default cartRouter;*/
+//es todo el codigo de la entrega pasada
